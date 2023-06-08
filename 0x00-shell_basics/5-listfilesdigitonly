@@ -1,3 +1,2 @@
-#!/bin/bash 
-root@ee4a179362eb:/alx-system_engineering-devops/0x00-shell_basics# ls -aln
-
+root@ee4a179362eb:/alx-system_engineering-devops# #!/bin/bash 
+root@ee4a179362eb:/alx-system_engineering-devops# ls -aln /0x00-shell_basics 
