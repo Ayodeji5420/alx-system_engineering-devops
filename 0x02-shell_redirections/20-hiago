@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Enter input: " input
+# Use the 'tr' command to delete the letters 'c' and 'C' from the input
+clean_input=$(echo "$input" | tr -d 'cC')
+echo "Cleaned input: $clean_input"

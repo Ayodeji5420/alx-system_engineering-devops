@@ -1,0 +1,6 @@
+#!/bin/bash
+# Use the 'ls' command with options to list the files in the current directory,
+# sort them by modification time in reverse order (newest to oldest),
+# and display only the file names.
+# Pipe the output to 'head' command to limit the list to 10 files.
+ls -lt --time=modification --reverse | grep -v '^d' | head -n 10 | awk '{print $9}'

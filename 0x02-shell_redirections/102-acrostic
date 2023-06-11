@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Read the input text
+read -r -d '' input_text
+
+# Split the input text into lines
+IFS=$'\n' read -r -a lines <<< "$input_text"
+
+# Loop through each line and extract the first letter
+decoded_message=""
+for line in "${lines[@]}"; do
+    first_letter=${line:0:1}
+    decoded_message+="$first_letter"
+done
+
+# Print the decoded message with a new line
+echo -e "$decoded_message"

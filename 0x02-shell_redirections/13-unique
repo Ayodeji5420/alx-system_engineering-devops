@@ -1,0 +1,15 @@
+#!/bin/bash
+# Read input from stdin into an array
+readarray -t words
+# Declare an associative array to count the occurrences of words
+declare -A wordCount
+# Loop through the words and count their occurrences
+for word in "${words[@]}"; do
+    ((wordCount[$word]++))
+done
+# Loop through the words again and print only the ones that appear exactly once
+for word in "${words[@]}"; do
+    if [[ ${wordCount[$word]} -eq 1 ]]; then
+        echo "$word"
+    fi
+done | sort

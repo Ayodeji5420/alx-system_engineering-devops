@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter input: " input
+reversed_input=$(echo "$input" | rev)
+echo "Reversed input: $reversed_input"
