@@ -12,4 +12,4 @@ for word in "${words[@]}"; do
     if [[ ${wordCount[$word]} -eq 1 ]]; then
         echo "$word"
     fi
-done | sort
+done | sort 
